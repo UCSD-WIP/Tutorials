@@ -79,22 +79,6 @@
       <div class="step">
         <h2 id="step1"><a href="step1.html">Step 1</a></h2>
         <p class="subtitle">Understanding the HTML document layout</p>
-        <pre><code class="language-html">&lt;!DOCTYPE html&gt;
-
-&lt;!-- This is the root tag of the document --&gt;
-&lt;html&gt;
-  &lt;!-- This is the head tag of the document. 
-    This is primarily where imports (CSS and JS usually) are located--&gt;
-  &lt;head&gt;
-  &lt;/head&gt;
-
-  &lt;!-- This is the body tag of the document.
-    This is where all of the visual elements of the document live. --&gt;
-
-  &lt;body&gt;
-    Here's some random text content!
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
       </div>
       
       <hr>
@@ -102,254 +86,53 @@
       <div class="step">
         <h2 id="step2"><a href="step2.html">Step 2</a></h2>
         <p class="subtitle">Adding more HTML text</p>
-        <pre><code class="language-html">&lt;!DOCTYPE html&gt;
-
-&lt;html&gt;
-  &lt;head&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-
-    &lt;!-- This is a div tag. Think of it like a folder/directory - it's for organization. --&gt;
-    &lt;div&gt;
-
-      &lt;!-- A 'h1' tag is a text element formatted to be the biggest header --&gt;
-      &lt;h1&gt;Here's a title!&lt;/h1&gt;
-
-      &lt;!-- A 'p' tag is a paragraph of text --&gt;
-      &lt;p&gt;Here's some text content!&lt;/p&gt;
-
-      &lt;!-- A 'h2' tag is a text element formatted to be the second biggest header --&gt;
-      &lt;h2&gt;Here's a smaller title!&lt;/h2&gt;
-
-      &lt;p&gt;Here's some more text content!&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
       </div>
       
       <hr>
 
       <div class="step">
-        <h2><a href="step3.html">Step 3</a></h2>
+        <h2 id="step3"><a href="step3.html">Step 3</a></h2>
         <p class="subtitle">Basic CSS and adding complex content</p>
-        <pre><code class="language-html">&lt;!DOCTYPE html&gt;
-
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;style&gt;
-      /* Apply style to everything with class &quot;doggies&quot; */
-      .doggies {
-        max-width: 300px;
-      }
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-
-    &lt;!-- Add a picture wrapped in a div --&gt;
-    &lt;div&gt;
-      &lt;img class=&quot;doggies&quot; src=&quot;../res/doggies.jpg&quot;&gt;
-    &lt;/div&gt;
-
-    &lt;div&gt;
-      &lt;h1&gt;Here's a title!&lt;/h1&gt;
-      &lt;p&gt;Here's some text content!&lt;/p&gt;
-      &lt;h2&gt;Here's a smaller title!&lt;/h2&gt;
-      &lt;p&gt;Here's some more text content!&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
       </div>
 
       <hr>
 
       <div class="step">
-        <h2><a href="step4.html">Step 4</a></h2>
+        <h2 id="step4"><a href="step4.html">Step 4</a></h2>
         <p class="subtitle">More complex CSS styles</p>
-        <pre><code class="language-html">&lt;!DOCTYPE html&gt;
-
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;style&gt;
-      /* Apply style to everything in the body - in this case, a font */
-      body {
-        font-family: Helvetica, Arial, sans-serif;
-      }
-
-      /* Centering! */
-      .container {
-        text-align: center;
-      }
-
-      .doggies {
-        /* Rounding things out */
-        border-radius: 50%;
-        max-width: 300px;
-      }
-    &lt;/style&gt;
-  &lt;/head&gt;
-
-  &lt;body&gt;
-    &lt;div class=&quot;container&quot;&gt;
-      &lt;div&gt;
-        &lt;img class=&quot;doggies&quot; src=&quot;../res/doggies.jpg&quot;&gt;
-      &lt;/div&gt;
-
-      &lt;div&gt;
-        &lt;h1&gt;Here's a title!&lt;/h1&gt;
-        &lt;p&gt;Here's some text content!&lt;/p&gt;
-        &lt;h2&gt;Here's a smaller title!&lt;/h2&gt;
-        &lt;p&gt;Here's some more text content!&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
       </div>
 
       <hr>
 
       <div class="step">
-        <h2><a href="step5.html">Step 5</a></h2>
+        <h2 id="step5"><a href="step5.html">Step 5</a></h2>
         <p class="subtitle">Putting in a background</p>
-        <pre><code class="language-html">&lt;!DOCTYPE html&gt;
-
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;style&gt;
-      body {
-        font-family: Helvetica, Arial, sans-serif;
-
-        /* Background stuffs */
-        min-height: 100vh;
-        background-image: url(&quot;../res/CSE.png&quot;);
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .container {
-        text-align: center;
-      }
-
-      .doggies {
-        border-radius: 50%;
-        max-width: 300px;
-      }
-
-      /* Let's add some spacing */
-      #header-picture {
-        padding: 30px 0;
-      }
-
-      /* Add some color to the text, too */
-      #coolbox {
-        display: inline-block;
-        background-color: rgba(246,255,255,.9);
-        padding: 30px;
-      }
-    &lt;/style&gt;
-  &lt;/head&gt;
-
-  &lt;body&gt;
-    &lt;div class=&quot;container&quot;&gt;
-      &lt;div id=&quot;header-picture&quot;&gt;
-        &lt;img class=&quot;doggies&quot; src=&quot;../res/doggies.jpg&quot;&gt;
-      &lt;/div&gt;
-
-      &lt;div id=&quot;coolbox&quot;&gt;
-        &lt;h1&gt;Here's a title!&lt;/h1&gt;
-        &lt;p&gt;Here's some text content!&lt;/p&gt;
-        &lt;h2&gt;Here's a smaller title!&lt;/h2&gt;
-        &lt;p&gt;Here's some more text content!&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
       </div>
 
       <hr>
 
       <div class="step">
-        <h2><a href="step6.html">Step 6</a></h2>
+        <h2 id="step6"><a href="step6.html">Step 6</a></h2>
         <p class="subtitle">Adding a splash of design</p>
-        <pre><code class="language-html">&lt;!DOCTYPE html&gt;
-
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;style&gt;
-      body {
-        font-family: Helvetica, Arial, sans-serif;
-        min-height: 100vh;
-
-        background-image: url(&quot;../res/CSE.png&quot;);
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .container {
-        text-align: center;
-      }
-
-      .doggies {
-        border-radius: 50%;
-        max-width: 300px;
-      }
-
-      #header-picture {
-        padding: 30px 0;
-      }
-
-      #coolbox {
-        display: inline-block;
-        background-color: rgba(246,255,255,.9);
-        padding: 30px;
-      }
-
-      /* Shadows! */
-      .shadow {
-        -moz-box-shadow: 0 6px 12px rgba(0,0,0,.4);
-        -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.4);
-        box-shadow: 0 6px 12px rgba(0,0,0,.4);
-      }
-
-      /* A class to apply round corners */
-      .round-corners {
-        border-radius: 10px;
-      }
-
-      /* A class for the subtitle */
-      .subtitle {
-        color: #777;
-      }
-
-      /* Highlight this text in particular */
-      .woah {
-        color: #F00;
-      }
-    &lt;/style&gt;
-  &lt;/head&gt;
-
-  &lt;body&gt;
-    &lt;div class=&quot;container&quot;&gt;
-      &lt;div id=&quot;header-picture&quot;&gt;
-        &lt;img class=&quot;doggies shadow&quot; src=&quot;../res/doggies.jpg&quot;&gt;
-      &lt;/div&gt;
-
-      &lt;div id=&quot;coolbox&quot; class=&quot;round-corners shadow&quot;&gt;
-        &lt;h1&gt;Here's a title!&lt;/h1&gt;
-        &lt;p class=&quot;subtitle&quot;&gt;
-          Here's some &lt;span class=&quot;woah&quot;&gt;text&lt;/span&gt; content!
-        &lt;/p&gt;
-        &lt;h2&gt;Here's a smaller title!&lt;/h2&gt;
-        &lt;p&gt;Here's some more text content!&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
       </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="../../js/libs/prism.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".step").each(function(index) {
+          var step = $(this);
+          var pre = $("<pre><code class='language-html'></code></pre>");
+          var code = pre.children("pre > code");
+
+          $.get("step" + (index + 1).toString() + ".html", function(data) {
+            code.text(data);
+            step.append(pre);
+            Prism.highlightElement(code[0]);
+          });
+        });
+      });
+    </script>
   </body>
 </html>
