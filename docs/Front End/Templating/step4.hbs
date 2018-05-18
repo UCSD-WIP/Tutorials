@@ -1,0 +1,11 @@
+<div class='jumbotron container'>
+  <h1>{{title}}</h1>
+
+  <!-- Show custom message based on whether user is logged in -->
+  {{#if user}}
+    <p>Welcome back, {{user.username}}!</p>
+  {{else}}
+    <p>Welcome to {{title}}</p>
+    <a class="btn btn-primary" href="login" role="button">Login</a>
+  {{/if}}
+</div>
