@@ -20,8 +20,8 @@ $(document).ready(function() {
     header_a.text("Step " + (index + 1).toString());
     subtitle.text(subtitle_text);
 
-    step.append(header);
-    step.append(subtitle);
+    step.prepend(subtitle);
+    step.prepend(header);
 
     // Load the code, format, and display it
     $.get("step" + (index + 1).toString() + "." + filetype, function(data) {
