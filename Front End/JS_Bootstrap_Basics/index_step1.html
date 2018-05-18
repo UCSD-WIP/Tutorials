@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!--CSS is imported here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Preserve some stylistic choices -->
+    <style>
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+        min-height: 100vh;
+
+        background-image: url("./res/CSE.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      .doggies {
+        max-width: 300px;
+      }
+
+      #header-picture {
+        padding: 30px 0;
+      }
+
+      .shadow {
+        -moz-box-shadow: 0 6px 12px rgba(0,0,0,.4);
+        -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.4);
+        box-shadow: 0 6px 12px rgba(0,0,0,.4);
+      }
+
+      .subtitle {
+        color: #777;
+      }
+
+      .woah {
+        color: #F00;
+      }
+    </style>
+  </head>
+
+  <!-- Here is a Bootstrap implementation of the original -->
+  <body>
+    <div class="container-fluid">
+      <div id="header-picture">
+        <img class="img-circle img-responsive doggies shadow" src="./res/doggies.jpg">
+      </div>
+
+      <div id="coolbox" class="jumbotron shadow">
+        <h1>Here's a title!</h1>
+        <p class="subtitle">
+          Here's some <span class="woah">text</span> content!
+        </p>
+        <h2>Here's a smaller title!</h2>
+        <p>Here's some more text content!</p>
+      </div>
+    </div>
+
+    <!-- JS is (usually) imported here -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
