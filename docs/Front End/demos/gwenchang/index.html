@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <style>
+
+            body {
+                background-image: url("background.jpg");
+            }
+            .doggo{
+                border-radius: 50%;
+                max-width:400px;
+                margin: auto;
+                width: 50%;
+                padding: 200px;
+            }
+
+            .text_box{
+                position: absolute;
+                right:200px;
+                top: 300px;
+                width: 30%;
+                border: 3px solid;
+                padding: 10px;
+            }
+
+            
+    
+        </style>
+        <script>
+            $(document).ready(function(){
+                $(".text_box").hover(function(){
+                    $(this).css("background-color", "#99ff99");
+                },
+                function(){
+                    $(this).css("background","");
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="doggo_pic">
+            <img class="doggo" alt="corgi pupper" src="corgi.jpg">
+        </div>
+        <div class="text_box">
+            <p>
+                Corgi: The best doggo ever.
+            </p>
+        </div>
+    </body>
+
+</html>
